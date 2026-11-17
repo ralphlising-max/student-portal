@@ -1,12 +1,54 @@
-# React + Vite
+# Student Information Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page application (SPA) built with **React** and **React Router** for
+**DCIT26: Application Development and Emerging Technologies** —
+Laboratory Exercise 2: React Routing and Reusable JSX.
 
-Currently, two official plugins are available:
+Cavite State University — Don Severino de las Alas Campus, Indang, Cavite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Reusable Navbar** — navigates to Home, Students, Courses, and About pages
+  with an active-link highlight
+- **Reusable StudentCard component** — rendered multiple times on the Students
+  page
+- **Reusable CourseCard component** — rendered multiple times on the Courses
+  page
+- **Client-side routing** — React Router maps each page to its URL path
+  (`/`, `/students`, `/courses`, `/about`)
+- **Responsive styling** — card grid layout, sticky navbar, hover effects
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+```
+src/
+├── components/       # Reusable components
+│   ├── Navbar.jsx / Navbar.css
+│   ├── StudentCard.jsx / StudentCard.css
+│   └── CourseCard.jsx / CourseCard.css
+├── pages/            # Page components
+│   ├── Home.jsx
+│   ├── Students.jsx
+│   ├── Courses.jsx
+│   └── About.jsx
+├── App.jsx           # Route configuration
+└── main.jsx          # BrowserRouter entry point
+```
+
+## Getting Started
+
+```bash
+npm install     # install dependencies
+npm run dev     # start the dev server at http://localhost:5173
+```
+
+## Technologies Used
+
+- [React](https://react.dev) — UI library
+- [React Router](https://reactrouter.com) — client-side routing
+- [Vite](https://vite.dev) — build tool and dev server
+
+## Developer
+
+- **John Ian Estampa**
+- DCIT26 — Application Development and Emerging Technologies
