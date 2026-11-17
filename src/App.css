@@ -1,0 +1,179 @@
+:root {
+  --navy: #1d3557;
+  --blue: #457b9d;
+  --light-blue: #a8dadc;
+  --off-white: #f1faee;
+  --red: #e63946;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #eef2f7;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-content {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* ---------- Home page ---------- */
+.hero {
+  background: linear-gradient(135deg, var(--navy), var(--blue));
+  color: var(--off-white);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+}
+
+.hero-text {
+  margin: 0 auto 1.5rem;
+  max-width: 560px;
+  font-size: 1.05rem;
+  color: #dbe9f5;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--red);
+  color: #fff;
+}
+
+.btn-secondary {
+  background: var(--light-blue);
+  color: var(--navy);
+}
+
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.quick-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(29, 53, 87, 0.1);
+}
+
+.quick-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--navy);
+}
+
+.quick-card p {
+  margin: 0 0 0.75rem;
+  color: #555;
+  font-size: 0.92rem;
+}
+
+.quick-card a {
+  color: var(--red);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.quick-card a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Shared page elements ---------- */
+.page-title {
+  margin: 0 0 0.25rem;
+  color: var(--navy);
+  font-size: 1.8rem;
+}
+
+.page-subtitle {
+  margin: 0 0 1.5rem;
+  color: #666;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ---------- About page ---------- */
+.about-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 10px rgba(29, 53, 87, 0.1);
+}
+
+.about-section h3 {
+  margin: 0 0 0.5rem;
+  color: var(--navy);
+}
+
+.about-section p {
+  margin: 0;
+  color: #444;
+}
+
+.about-section code {
+  background: var(--off-white);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  color: var(--blue);
+  font-size: 0.9em;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: var(--navy);
+  color: #a8b8cc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+.footer p {
+  margin: 0;
+}
